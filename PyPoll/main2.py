@@ -39,7 +39,7 @@ for cand in candidate:
 print(f'Total Votes: {total_votes}') 
 
 for cand, vt in votes.items():         
-    print(str(cand), ":", str(round((vt/total_votes*100), 3)),"%", "(",str(vt),")")
+    print(str(cand)+": "+str(round((vt/total_votes*100), 3))+"% "+"("+str(vt)+")")
     
 #getting the winner from who got max vote count
 winner = max(zip(votes.values(), votes.keys()))[1]
